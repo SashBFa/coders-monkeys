@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -148,6 +149,10 @@ module.exports = {
           fontWeight: '400',
         },
       ],
+    },
+    borderRadius: {
+      DEFAULT: '10px',
+      full: '9999px',
     },
     extend: {},
   },
