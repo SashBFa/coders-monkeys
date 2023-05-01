@@ -1,5 +1,6 @@
 import { Seo } from '@/ui/component/seo';
 import { Button } from '@/ui/design-system/button/button';
+import { Spinner } from '@/ui/design-system/spinner/spinner';
 import { Typography } from '@/ui/design-system/typography/typography';
 import { RiUser6Fill } from 'react-icons/ri';
 
@@ -10,6 +11,12 @@ export default function Home() {
       {/* <Typography variant="display" component="h1" theme="primary">
         Coders Monkeys web app
       </Typography> */}
+
+      <div className="flex items-center gap-4 p-10">
+        <Spinner size="small" />
+        <Spinner />
+        <Spinner size="large" />
+      </div>
 
       <div className="flex items-center gap-4 p-10">
         <Button size="small">Accent</Button>
@@ -32,6 +39,19 @@ export default function Home() {
           Disabled
         </Button>
         <Button variant="ico" icon={{ icon: RiUser6Fill }} />
+      </div>
+      <div className="flex items-center gap-4 p-10">
+        <Button isLoading>Accent</Button>
+        <Button variant="secondary" isLoading>
+          Secondary
+        </Button>
+        <Button variant="outline" isLoading>
+          Outline
+        </Button>
+        <Button variant="disabled" isLoading disabled>
+          Disabled
+        </Button>
+        <Button variant="ico" icon={{ icon: RiUser6Fill }} isLoading />
       </div>
       <div className="flex items-center gap-4 p-10">
         <Button size="large">Accent</Button>
