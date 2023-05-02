@@ -104,7 +104,8 @@ export const Button = ({
               size="small"
               variant={
                 variant === 'accent' ||
-                (variant === 'ico' && iconTheme === 'accent')
+                (variant === 'ico' && iconTheme === 'accent') ||
+                (variant === 'ico' && iconTheme === 'gray')
                   ? 'white'
                   : 'primary'
               }
