@@ -89,7 +89,7 @@ export const Button = ({
       <button
         type="button"
         className={clsx(
-          'relative',
+          'relative animate',
           sizeStyles,
           variantStyles,
           icoSize,
